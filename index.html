@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haneul Closet IQ™</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <img src="logo.png" class="logo" alt="Haneul Studio">
+
+  <h1>Haneul Closet IQ™</h1>
+  <p class="subtitle">Wardrobe Usage Intelligence • ₹999</p>
+
+  <!-- IMAGE UPLOAD -->
+  <div class="card">
+    <h3>Upload Your Outfit / Wardrobe Image</h3>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="analyze()">Analyze</button>
+  </div>
+
+  <!-- PREVIEW RESULTS -->
+  <div class="card hidden" id="preview">
+    <h3>Preview Results</h3>
+
+    <ul>
+      <li><strong>Outfit Repetition Index:</strong> Moderate</li>
+      <li><strong>Wardrobe Saturation:</strong> High similarity detected</li>
+      <li><strong>Underused Items:</strong> Likely present</li>
+      <li><strong>Visual Fatigue Risk:</strong> Medium</li>
+    </ul>
+
+    <p class="note">
+      This is a partial preview. Full breakdown available in the Pro PDF.
+    </p>
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="card hidden" id="payment">
+    <h3>Unlock Full Report – ₹999</h3>
+
+    <img src="upi-qr.png" class="qr" alt="UPI QR">
+
+    <p>
+      Pay ₹999 using any UPI app.<br>
+      After payment, submit transaction details.
+    </p>
+
+    <a class="btn"
+       href="https://forms.gle/18j8pevGSuvhQnfY7"
+       target="_blank">
+       Submit Payment Details
+    </a>
+  </div>
+
+  <!-- LOCKED PDF -->
+  <div class="card hidden" id="locked">
+    <h3>Full PDF Report</h3>
+    <p class="lock">🔒 Locked until payment is verified</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
