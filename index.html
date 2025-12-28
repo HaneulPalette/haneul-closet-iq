@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Haneul Closet IQ™</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-
-  <img src="logo.png" class="logo" alt="Haneul Studio">
-
+<header>
+  <img src="logo.png" class="logo">
   <h1>Haneul Closet IQ™</h1>
-  <p class="subtitle">Wardrobe Usage Intelligence • ₹999</p>
+  <p>₹999 • One-time • AI-based visual usage analysis</p>
+</header>
 
-  <!-- IMAGE UPLOAD -->
-  <div class="card">
-    <h3>Upload Your Outfit / Wardrobe Image</h3>
-    <input type="file" id="imageInput" accept="image/*">
-    <button onclick="analyze()">Analyze</button>
-  </div>
+<section class="analysis">
+  <h2>Upload Your Outfit Image</h2>
 
-  <!-- PREVIEW RESULTS -->
-  <div class="card hidden" id="preview">
-    <h3>Preview Results</h3>
+  <iframe
+    src="https://YOUR-HF-SPACE.hf.space"
+    width="100%"
+    height="650"
+    style="border:none;">
+  </iframe>
+</section>
 
-    <ul>
-      <li><strong>Outfit Repetition Index:</strong> Moderate</li>
-      <li><strong>Wardrobe Saturation:</strong> High similarity detected</li>
-      <li><strong>Underused Items:</strong> Likely present</li>
-      <li><strong>Visual Fatigue Risk:</strong> Medium</li>
-    </ul>
+<section class="payment">
+  <h2>Unlock Full Report</h2>
 
-    <p class="note">
-      This is a partial preview. Full breakdown available in the Pro PDF.
-    </p>
-  </div>
+  <img src="upi-qr.png" class="qr">
 
-  <!-- PAYMENT -->
-  <div class="card hidden" id="payment">
-    <h3>Unlock Full Report – ₹999</h3>
+  <p><strong>Amount:</strong> ₹999</p>
 
-    <img src="upi-qr.png" class="qr" alt="UPI QR">
+  <p>
+    After payment, submit your Analysis ID & Transaction ID
+  </p>
 
-    <p>
-      Pay ₹999 using any UPI app.<br>
-      After payment, submit transaction details.
-    </p>
+  <a
+    href="https://forms.gle/18j8pevGSuvhQnfY7"
+    target="_blank"
+    class="btn">
+    Submit Payment Proof
+  </a>
+</section>
 
-    <a class="btn"
-       href="https://forms.gle/18j8pevGSuvhQnfY7"
-       target="_blank">
-       Submit Payment Details
-    </a>
-  </div>
+<footer>
+  <p>Educational & guidance-based visual analysis only.</p>
+</footer>
 
-  <!-- LOCKED PDF -->
-  <div class="card hidden" id="locked">
-    <h3>Full PDF Report</h3>
-    <p class="lock">🔒 Locked until payment is verified</p>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
